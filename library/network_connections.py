@@ -777,6 +777,7 @@ class NMUtil:
                 NM.SETTING_CONNECTION_TYPE, NM.SETTING_INFINIBAND_SETTING_NAME
             )
             s_infiniband = self.connection_ensure_setting(con, NM.SettingInfiniband)
+            s_wired = self.connection_ensure_setting(con, NM.SettingWired)
             s_infiniband.set_property(
                 NM.SETTING_INFINIBAND_MAC_ADDRESS, connection["mac"]
             )
